@@ -8,7 +8,7 @@ app.get('/', (req:Request, res:Response)=>{
     res.status(400).send("hoge");
 });
 
-app.get('/', (req:Request, res:Response)=>{
+app.get('/bad', (req:Request, res:Response)=>{
     // 400 status
     res.status(400).send("huga");
 });
