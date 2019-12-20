@@ -5,7 +5,7 @@ const app = e();
 
 app.get('/', (req:Request, res:Response)=>{
     // 200 status
-    res.status(400).send("hoge");
+    res.status(200).send("hoge");
 });
 
 app.get('/bad', (req:Request, res:Response)=>{
