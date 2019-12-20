@@ -3,16 +3,16 @@ import {Request, Response} from 'express';
 
 const app = e();
 
-app.use(e.json());
-app.use(e.urlencoded({ extended: true }));
+app.get('/', (req:Request, res:Response)=>{
+    // 200 status
+    res.status(400).send("hoge");
+});
 
 app.get('/', (req:Request, res:Response)=>{
-    res.status(200).json(
-        {
-            message: 'HelloWorld!'
-        }
-        )
+    // 400 status
+    res.status(400).send("huga");
 });
+
 
 app.listen(9000, ()=>{
     console.log('Listen 9000')
